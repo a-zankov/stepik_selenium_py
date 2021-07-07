@@ -5,7 +5,7 @@ import time
 
 class TestLesson3S2Step12(unittest.TestCase):
     def test_abs1(self):
-        link = "http://suninjuly.github.io/registration1.html"
+        link = "http://suninjuly.github.io/registration2.html"
         browser = webdriver.Chrome()
         browser.get(link)
 
@@ -39,7 +39,7 @@ class TestLesson3S2Step12(unittest.TestCase):
         browser.quit()
 
     def test_abs2(self):
-        link = "http://suninjuly.github.io/registration2.html"
+        link = "http://suninjuly.github.io/registration1.html"
         browser = webdriver.Chrome()
         browser.get(link)
 
