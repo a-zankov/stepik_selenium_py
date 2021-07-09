@@ -7,7 +7,9 @@ import math
 @pytest.fixture(scope="function")
 def browser():
     print("\nstart browser for test..")
-    browser = webdriver.Chrome()
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option('excludeSwitches', ['enable-logging'])
+    browser = webdriver.Chrome(options=options)
     browser.implicitly_wait(5)
     yield browser
     print("\nquit browser..")
