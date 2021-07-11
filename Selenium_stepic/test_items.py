@@ -7,3 +7,5 @@ def test_add_to_cart_button(browser):
     browser.get(link)
     time.sleep(15)  # таймслип для проверки
     browser.find_element_by_css_selector(".btn-add-to-basket")
+    assert browser.find_elements_by_css_selector(
+        ".btn-add-to-basket"), "Add to cart button not found"
